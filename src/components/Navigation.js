@@ -6,15 +6,12 @@ const Navigation = ({closeNav}) => {
   const navigate = useNavigate();
   const navigateToHome = () => {
     navigate('/');
-    window.location.reload();
   };
   const navigateToAbout = () => {
     navigate('/about');
-    window.location.reload();
   };
   const navigateToProjects = () => {
     navigate('/projects');
-    window.location.reload();
   };
 
   return (

@@ -13,9 +13,9 @@
     '. grid-2 . .'
     '. grid-2 grid-9 grid-9'
     '. grid-2 . .'
-    '. grid-3 grid-5 grid-5'
-    '. grid-3 grid-7 grid-7'
-    '. grid-3 grid-8 grid-8'
+    '. grid-3 . grid-5'
+    '. grid-3 . grid-7'
+    '. grid-3 . grid-8'
     '. grid-3 . .'
     '. . . .';
 }
@@ -41,35 +41,24 @@
 
 .linkedin-container-css {
   grid-area: grid-5;
-  border: 1px solid black;
+  display: flex;
+  justify-content: center;
 }
 
 .facebook-container-css {
   grid-area: grid-7;
-  border: 1px solid black;
+  display: flex;
+  justify-content: center;
 }
 
 .instagram-container-css {
   grid-area: grid-8;
-  border: 1px solid black;
+  display: flex;
+  justify-content: center;
 }
 
 .resume-container-css {
   grid-area: grid-9;
-}
-
-.reyda-image-container-css {
-  position: absolute;
-  z-index: -200;
-  overflow: hidden;
-  margin-left: 64%;
-}
-
-.reyda-image-css {
-  margin-left: 34%;
-  margin-top: -5%;
-  width: 70%;
-  animation: comingIn 2s;
 }
 
 @keyframes comingIn {
@@ -243,37 +232,69 @@
   animation: goingIn 2s;
 }
 
-.resume-css {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-left: 15%;
-}
-
-.resume-css:hover {
-  margin-left: 0%;
-}
-
 .downloadResume {
   border-radius: 10px;
   background-image: linear-gradient(180deg, #D59BF6, #FF88DE);
-  box-shadow: 1px 1px black;
+  box-shadow: 1px 1px #D59BF6;
   display: flex;
-  width: 24%;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   position: absolute;
+  width: 23%;
+  border: 2px solid black;
+  margin-left: 0.5%;
+  animation: comingIn 2s;
+}
+
+.downloadResume:hover {
+  background-image: linear-gradient(180deg,  #FFFFFE, #FF88DE);
+  border-color: #D59BF6;
 }
 
 .download-text-css {
   font-size: 1.3vw;
   font-family: New Century Schoolbook, TeX Gyre Schola, serif;
   color: #000000;
-  margin: 1.2% 1% 1.2% 0%;
+  margin: 1.5% 1% 1.5% 0%;
   display: inline-block;
 }
 
 .download-icon-css {
   display: inline-block;
   margin: 2.5% 2% 2.5% 1%;
+}
+
+.linkedin-css,
+.facebook-css,
+.instagram-css {
+  margin-left: 41%;
+  animation: goingIn 2s;
+}
+
+.reyda-image-container-css {
+  position: absolute;
+  z-index: -200;
+  overflow: hidden;
+  margin-left: 64%;
+}
+
+.reyda-image-css {
+  margin-left: 34%;
+  margin-top: -5%;
+  width: 70%;
+  animation: comingIn 2s;
+}
+
+.design-image-container-css {
+  position: absolute;
+  z-index: -200;
+  overflow: hidden;
+  margin-left: -14%;
+  margin-top: 43%;
+  height: 8%;
+}
+
+.design-image-css {
+  width: 70%;
+  animation: goingIn 2s;
 }
