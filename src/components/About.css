@@ -279,9 +279,9 @@
 }
 
 .reyda-image-css {
-  margin-left: 34%;
+  margin-left: 24%;
   margin-top: -5%;
-  width: 70%;
+  width: 90%;
   animation: comingIn 2s;
 }
 
@@ -289,7 +289,7 @@
   position: absolute;
   z-index: -200;
   overflow: hidden;
-  margin-left: -14%;
+  margin-left: 0%;
   margin-top: 43%;
   height: 8%;
 }
