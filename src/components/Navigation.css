@@ -1,0 +1,98 @@
+.navigation-css {
+  height: 100vh;
+  width: 100vw;
+  z-index: 200;
+  overflow: hidden;
+  background-image: linear-gradient(180deg, #FFFFFE,#D59BF6);
+  background-color: #D59BF6;
+}
+  
+.grid-modal-css {
+  display: grid;
+  grid-template: 3.05vw 7.95vw 7.25vw 7.25vw 7.25vw 7.25vw 5vw / 0.4fr 4fr 1fr 0.4fr;
+  grid-template-areas:
+    '. . . .'
+    '. grid-1 grid-6 .'
+    '. grid-2 grid-6 .'
+    '. grid-3 grid-6 .'
+    '. grid-4 grid-6 .'
+    '. grid-5 grid-6 .'
+    '. . . .';
+}
+
+/* CSS for logo-container-css is t the homepage.css */
+/* .logo-container-css {
+  grid-area: grid-1;
+} */
+
+/* CSS for hamburger-container-css is t the homepage.css */
+/* .hamburger-container-css {
+  grid-area: grid-6;
+} */
+
+.text1-modal-css {
+  grid-area: grid-2;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.text2-modal-css {
+  grid-area: grid-3;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.text3-modal-css {
+  grid-area: grid-4;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.text4-modal-css {
+  grid-area: grid-5;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.home-text-css,
+.about-text-css,
+.projects-text-css,
+.contact-text-css {
+  font-size: 5vw;
+  font-family: Georgia, serif;
+  color: #000000;
+  text-shadow: 0.5px 0.5px #D59BF6;
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+@keyframes appear {
+  0% {margin-top: -20%;}
+  100% {margin-top: 0%;}
+}
+
+.home-text-css:hover,
+.about-text-css:hover,
+.projects-text-css:hover,
+.contact-text-css:hover {
+  color: #FF88DE;
+  text-shadow: 0.5px 0.5px #000000;
+}
+
+.hamburger2-css {
+  border: 2px solid #000000;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, #D59BF6, #FF88DE);
+  margin-top: 5.5%;
+  margin-right: -0.2%;
+}
+
+.hamburger2-css:hover {
+  border: 2px solid #D59BF6;
+  border-radius: 5px;
+  background-image: linear-gradient(#D59BF6, #FFFFFE);
+}

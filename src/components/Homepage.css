@@ -1,11 +1,11 @@
 .homepage-css {
-  height: 100vh;
+  /* height: 100vh; */
   overflow: hidden;
 }
 
-.grid-container-css {
+.homepage-grid-container-css {
   display: grid;
-  grid-template: 3vw 8vw 3vw 3vw 3vw 20vw 5vw / 0.4fr 4fr 1fr 0.4fr;
+  grid-template: 3vw 8vw 3vw 3vw 3vw 15vw 5vw 5vw / 0.4fr 4fr 1fr 0.4fr;
   grid-template-areas:
     '. . . .'
     '. grid-1 grid-6 .'
@@ -13,6 +13,7 @@
     '. grid-3 grid-6 .'
     '. grid-4 grid-6 .'
     '. grid-5 grid-5 .'
+    '. grid-7 grid-7 .'
     '. . . .';
 }
 
@@ -26,18 +27,21 @@
   grid-area: grid-2;
   display: flex;
   justify-content: flex-start;
+  animation: transitionIn 1s;
 }
 
 .text2-container-css {
   grid-area: grid-3;
   display: flex;
   justify-content: flex-start;
+  animation: transitionIn 2s;
 }
 
 .text3-container-css {
   grid-area: grid-4;
   display: flex;
   justify-content: flex-start;
+  animation: transitionIn 3s;
 }
 
 .splash-container-css {
@@ -52,21 +56,26 @@
   justify-content: flex-end;
 }
 
-.text1-css {
+.techstacks-logo-css {
+  grid-area: grid-7;
   display: flex;
-  font-size: 2.5vw;
-  font-family: Georgia, serif;
-  color: #000000;
-  text-shadow: 0.5px 0.5px #D59BF6;
+  justify-content: flex-start;
 }
 
-.text2-css {
-  font-size: 2.5vw;
-  font-family: Georgia, serif;
-  color: #000000;
-  text-shadow: 0.5px 0.5px #D59BF6;
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
+.text1-css,
+.text2-css,
 .text3-css {
   font-size: 2.5vw;
   font-family: Georgia, serif;
@@ -75,38 +84,35 @@
 }
 
 .frontend-text-css {
-  font-size: 15vw;
+  font-size: 13vw;
   font-family: Georgia, serif;
-  margin-left: -100%;
-  padding: 0% 1%;
-  animation-name: splash;
-  animation-duration: 6s;
+  margin-left: -65.8%;
   overflow: hidden;
   position: absolute;
+  animation-name: splash;
+  animation-duration: 9s;
 }
 
 .backend-text-css {
-  font-size:15vw;
+  font-size:13vw;
   font-family: Georgia, serif;
-  margin-left: -100%;
-  animation-name: splash;
-  animation-delay: 2s;
-  animation-duration: 6s;
-  opacity: 50%;
+  margin-left: -65.8%;
   overflow: hidden;
   position: absolute;
+  animation-name: splash;
+  animation-delay: 3s;
+  animation-duration: 9s;
 }
 
 .fullstack-text-css {
-  font-size: 15vw;
+  font-size:13vw;
   font-family: Georgia, serif;
-  margin-left: -100%;
-  animation-name: splash;
-  animation-delay: 4s;
-  animation-duration: 6s;
-  opacity: 30%;
+  margin-left: -65.8%;
   overflow: hidden;
   position: absolute;
+  animation-name: splash;
+  animation-delay: 6s;
+  animation-duration: 9s;
 }
 
 .frontend-text-css,
@@ -116,9 +122,9 @@
 }
 
 @keyframes splash {
-  20% {margin-left: -100%; opacity: 0%;}
+  20% {margin-left: -65.8%; opacity: 0%;}
   50% {margin-left: 0%; opacity: 100%;}
-  100% {margin-left: -100%; opacity: 0%;}
+  100% {margin-left: -65.8%; opacity: 0%;}
 }
 
 .hamburger-css {
@@ -134,112 +140,58 @@
   background-image: linear-gradient(#D59BF6, #FFFFFE);
 }
 
-/* FOR NAVIGATION */
-.navigation-css {
-  height: 100vh;
-  width: 100vw;
-  z-index: 200;
+.frontend-logos-css {
+  display: flex;
+  align-self: flex-start;
+  padding: 0.5% 0%;
+  width: 80%;
+  margin-left: -80%;
   overflow: hidden;
-  background-image: linear-gradient(180deg, #FFFFFE,#D59BF6);
-  background-color: #D59BF6;
+  position: absolute;
+  animation-name: logo-splash;
+  animation-duration: 9s;
 }
 
-.grid-modal-css {
-  display: grid;
-  grid-template: 3.05vw 7.97vw 9.66vw 11vw 11vw 2.32vw / 0.4fr 4fr 1fr 0.4fr;
-  grid-template-areas:
-    '. . . .'
-    '. grid1 grid5 .'
-    '. grid2 grid5 .'
-    '. grid3 grid5 .'
-    '. grid4 grid5 .'
-    '. . . .';
-}
-
-.logo-modal-css {
-  grid-area: grid1;
+.backend-logos-css {
   display: flex;
-  justify-content: flex-start;
-}
-
-.text1-modal-css {
-  grid-area: grid2;
-  display: flex;
-  justify-content: flex-start;
+  align-self: flex-start;
+  padding: 0.5% 0%;
+  width: 80%;
+  margin-left: -80%;
   overflow: hidden;
+  position: absolute;
+  animation-name: logo-splash;
+  animation-delay: 3s;
+  animation-duration: 9s;
 }
 
-.text2-modal-css {
-  grid-area: grid3;
+.fullstack-logos-css {
   display: flex;
-  justify-content: flex-start;
+  align-self: flex-start;
+  padding: 0.5% 0%;
+  width: 80%;
+  margin-left: -80%;
   overflow: hidden;
+  position: absolute;
+  animation-name: logo-splash;
+  animation-delay: 6s;
+  animation-duration: 9s;
 }
 
-.text3-modal-css {
-  grid-area: grid4;
-  display: flex;
-  justify-content: flex-start;
-  overflow: hidden;
+.frontend-logos-css,
+.backend-logos-css,
+.fullstack-logos-css {
+  animation-iteration-count: infinite;
 }
 
-.hamburger-modal-css {
-  grid-area: grid5;
-  display: flex;
-  justify-content: flex-end;
+@keyframes logo-splash {
+  20% {margin-left: -80%; opacity: 0%;}
+  50% {margin-left: 0%; opacity: 100%;}
+  100% {margin-left: -80%; opacity: 0%;}
 }
 
-.about-text-css {
-  font-size: 8vw;
-  font-family: Georgia, serif;
-  color: #000000;
-  text-shadow: 0.5px 0.5px #D59BF6;
-  animation-name: appear;
-  animation-duration: 1s;
-}
-
-
-.projects-text-css {
-  font-size: 8vw;
-  font-family: Georgia, serif;
-  color: #000000;
-  text-shadow: 0.5px 0.5px #D59BF6;
-  animation-name: appear;
-  animation-duration: 1s;
-}
-
-.contact-text-css {
-  font-size: 8vw;
-  font-family: Georgia, serif;
-  color: #000000;
-  text-shadow: 0.5px 0.5px #D59BF6;
-  animation-name: appear;
-  animation-duration: 1s;
-}
-
-
-@keyframes appear {
-  0% {margin-top: -20%;}
-  100% {margin-top: 0%;}
-}
-
-.about-text-css:hover,
-.projects-text-css:hover,
-.contact-text-css:hover {
-  color: #FF88DE;
-  text-shadow: 0.5px 0.5px #000000;
-}
-
-.hamburger2-css {
-  border: 2px solid #000000;
-  border-radius: 5px;
-  background-image: linear-gradient(180deg, #D59BF6, #FF88DE);
-  margin-top: 5.5%;
-  margin-right: -0.2%;
-}
-
-.hamburger2-css:hover {
-  border: 2px solid #D59BF6;
-  border-radius: 5px;
-  background-image: linear-gradient(#D59BF6, #FFFFFE);
+.techstacks-image-css {
+  display: inline-block;
+  width: 6%;
+  margin: 0% 0.5% 0% 0%;
 }
