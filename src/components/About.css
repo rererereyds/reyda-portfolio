@@ -6,7 +6,7 @@
   display: grid;
   grid-template: 3vw 8vw 7vw 3vw 3vw 3vw 3vw 3vw 3vw 3vw 3vw 1vw / 0.4fr 4fr 1fr 0.4fr;
   grid-template-areas:
-    '. . . .'
+    '. . . grid-10'
     '. grid-1 grid-6 .'
     '. grid-2 . .'
     '. grid-2 . .'
@@ -272,16 +272,24 @@
 }
 
 .reyda-image-container-css {
-  position: absolute;
-  z-index: -200;
-  overflow: hidden;
-  margin-left: 64%;
+  grid-area: grid-10;
+  /* position: absolute; */
+  /* z-index: -200; */
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  /* border: 1px solid black; */
+  /* margin-left: 64%; */
 }
 
 .reyda-image-css {
-  margin-left: 20%;
-  margin-top: -10%;
-  width: 80%;
+  /* margin-left: 20%;
+  margin-top: -10%; */
+  width: 25%;
+  position: absolute;
+  z-index: -200;
+  /* width: 0%; */
   animation: comingIn 2s;
 }
 

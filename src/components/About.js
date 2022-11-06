@@ -129,12 +129,12 @@ const About = () => {
 
               <p className="t9-css">HTML</p>
               <p className="t10-css">CSS</p>
-              <p className="t11-css">JAVASCRIPT</p>
-              <p className="t12-css">BOOTSTRAP</p>
-              <p className="t13-css">REACTJS</p>
-              <p className="t14-css">NODEJS</p>
-              <p className="t15-css">EXPRESSJS</p>
-              <p className="t16-css">MONGODB</p>
+              <p className="t11-css">Javascript</p>
+              <p className="t12-css">Bootstrap</p>
+              <p className="t13-css">ReactJS</p>
+              <p className="t14-css">NodeJS</p>
+              <p className="t15-css">ExpressJS</p>
+              <p className="t16-css">MongoDB</p>
             </div>
           </div>
         </div>
