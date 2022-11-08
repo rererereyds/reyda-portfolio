@@ -86,21 +86,21 @@ const Homepage = () => {
             />
           </div>
           <div className="fullstack-logos">
-            <img
+            {/* <img
               className="techstacks-image"
               src={require("../images/html.png")}
               alt="logo"
-            />
+            /> */}
             <img
               className="techstacks-image"
               src={require("../images/css.png")}
               alt="logo"
             />
-            <img
+            {/* <img
               className="techstacks-image"
               src={require("../images/javascript.png")}
               alt="logo"
-            />
+            /> */}
             <img
               className="techstacks-image"
               src={require("../images/bootstrap.png")}

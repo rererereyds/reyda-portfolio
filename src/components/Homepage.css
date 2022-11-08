@@ -173,20 +173,21 @@
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 426px) {
+@media only screen and (max-width: 320px) {
   .homepage {
     overflow: hidden;
   }
   
   .homepage-grid-container {
     display: grid;
-    grid-template: 15vw 14vw 10vw 21vw 33vw 24vw 15vw 5vw / 0.4fr 4fr 1fr 0.4fr;
+    grid-template: 15vw 40vw 10vw 20vw 20vw 10vw 24vw 20vw 5vw / 0.4fr 4fr 1fr 0.4fr;
     grid-template-areas:
       '. . . .'
       '. . . .'
       '. g1 g1 .'
       '. g2 g2 .'
       '. g3 g3 .'
+      '. . . .'
       '. g4 g4 .'
       '. g5 g5 .'
       '. . . .';
@@ -198,7 +199,6 @@
     justify-content: flex-start;
     text-align: left;
     animation: transitionIn 1s;
-    border: 1px solid black;
   }
   
   .text2-container {
@@ -207,7 +207,6 @@
     justify-content: flex-start;
     text-align: left;
     animation: transitionIn 2s;
-    border: 1px solid black;
   }
   
   .text3-container {
@@ -216,14 +215,12 @@
     justify-content: flex-start;
     text-align: left;
     animation: transitionIn 3s;
-    border: 1px solid black;
   }
   
   .splash-container {
     grid-area: g4;
     display: flex;
     justify-content: flex-start;
-    border: 1px solid black;
   }
   
   .techstacks-logo {
@@ -247,7 +244,7 @@
   .text1,
   .text2,
   .text3 {
-    font-size: 7vw;
+    font-size: 6vw;
     font-family: Georgia, serif;
     color: #000000;
     text-shadow: 0.5px 0.5px #D59BF6;
@@ -342,8 +339,7 @@
   }
   
   .techstacks-image {
-    display: inline-block;
-    width: 10%;
-    margin: 0% 0.5% 0% 0%;
+    width: 15%;
+    margin: 0% 1% 0% 0%;
   }
 }
