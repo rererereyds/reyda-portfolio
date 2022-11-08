@@ -152,16 +152,16 @@
     
   .grid-modal {
     display: grid;
-    grid-template: 1.94vw 25vw 10vw 12vw 12vw 12vw 12vw 70vw / 0.15fr 1fr 1fr 0.15fr;
+    grid-template: 2.07vw 27vw 10vw 12vw 12vw 12vw 10vw 70vw / 0.15fr 1fr 1fr 0.15fr;
     grid-template-areas:
       '. . . .'
       '. g1 g2 .'
       '. . . .'
-      '. . g3 .'
-      '. . g4 .'
-      '. . g5 .'
-      '. . g6 .'
-      '. g7 . .';
+      '. g3 g3 .'
+      '. g4 g4 .'
+      '. g5 g5 .'
+      '. g6 g6 .'
+      '. g7 g7 .';
   }
   
   .nav-logo-container {
@@ -171,7 +171,7 @@
   }
   
   .nav-logo-image {
-    width: 57.5%;
+    width: 62%;
   }
   
   .nav-hamburger-container {
@@ -186,6 +186,8 @@
     display: flex;
     justify-content: flex-start;
     overflow: hidden;
+    z-index: 100;
+    margin-left: 10%;
   }
   
   .text2-modal {
@@ -193,6 +195,8 @@
     display: flex;
     justify-content: flex-start;
     overflow: hidden;
+    z-index: 100;
+    margin-left: 10%;
   }
   
   .text3-modal {
@@ -200,6 +204,8 @@
     display: flex;
     justify-content: flex-start;
     overflow: hidden;
+    z-index: 100;
+    margin-left: 10%;
   }
   
   .text4-modal {
@@ -207,17 +213,21 @@
     display: flex;
     justify-content: flex-start;
     overflow: hidden;
+    z-index: 100;
+    margin-left: 10%;
   }
   
   .ramble-image-container {
     grid-area: g7;
     display: flex;
     justify-content: center;
-    animation: fromLeft 2s;
+    align-items: center;
+    opacity: 70%;
   }
   
   .ramble-image {
-    width: 130%;
+    width: 100%;
+    animation: fromLeft 2s;
   }
   
   @keyframes fromLeft {

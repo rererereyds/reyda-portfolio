@@ -285,3 +285,302 @@
   margin-left: 41%;
   animation: goingIn 2s;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  .about-page {
+    overflow: hidden;
+  }
+  
+  .about-grid-container {
+    display: grid;
+    grid-template: 27vw 63vw 85vw 48vw 12vw 8vw 12vw 5vw 10vw / 7vw 13vw 20vw 20vw 20vw 13vw 7vw;
+    grid-template-areas:
+      '. . . . . . .'
+      '. . . g7 g7 g7 g7'
+      '. g1 g1 g1 g1 g1 .'
+      '. g2 g2 g2 g2 g2 .'
+      '. g6 g6 g6 g6 g6 .'
+      '. . . . . . .'
+      '. . g3 g4 g5 . .'
+      '. . . . . . .'
+      'g8 g8 g8 . . . .';
+  }
+  
+  .about-container {
+    grid-area: g1;
+    padding: 2% 1% 0%;
+  }
+  
+  .techstacks-container {
+    grid-area: g2;
+  }
+  
+  .linkedin-container {
+    grid-area: g3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .facebook-container {
+    grid-area: g4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .instagram-container {
+    grid-area: g5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .resume-container {
+    grid-area: g6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .reyda-image-container {
+    grid-area: g7;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  .reyda-image {
+    width: 60%;
+    position: absolute;
+    z-index: -200;
+    animation: comingIn 2s;
+  }
+  
+  .design-image-container {
+    grid-area: g8;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;  
+  }
+  
+  .design-image {
+    width: 70%;
+    position: absolute;
+    z-index: -200;
+    animation: goingIn 2s;
+  }
+  
+  @keyframes comingIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  .about-text-container {
+    border-bottom: 2px solid black;
+    margin-bottom: 1%;
+  }
+  
+  .about {
+    font-size: 6vw;
+    font-family: Georgia, serif;
+    color: #000000;
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  .information-text-container {
+    border-left: 6px solid #D59BF6;
+    border-radius: 10px;
+    padding: 0.5% 1%;
+    animation: goingIn 2s;
+  }
+  
+  @keyframes goingIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .information {
+    font-size: 4vw;
+    font-family: Georgia, serif;
+    color: #000000;
+    text-align: left;
+    margin-left: 1%;
+  }
+  
+  .techstacks-grid {
+    display: grid;
+    grid-template: 10vw 10vw 7vw 10vw 7vw / 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'g-1 g-1 g-1 g-1'
+      'g-2 g-3 g-4 g-5'
+      'g-10 g-11 g-12 g-13'
+      'g-6 g-7 g-8 g-9' 
+      'g-14 g-15 g-16 g-17';
+    
+  }
+  
+  .techstacks-text {
+    grid-area: g-1;
+    font-size: 4vw;
+    font-family: Georgia, serif;
+    color: #000000;
+    text-align: left;
+    margin-left: 1%;
+  }
+  
+  .t1 {
+    grid-area: g-2;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .t2 {
+    grid-area: g-3;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .t3 {
+    grid-area: g-4;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .t4 {
+    grid-area: g-5;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .t5 {
+    grid-area: g-6;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .t6 {
+    grid-area: g-7;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .t7 {
+    grid-area: g-8;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .t8 {
+    grid-area: g-9;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .t9 {
+    grid-area: g-10;
+    font-size: 4vw;
+  }
+  
+  .t10 {
+    grid-area: g-11;
+    font-size: 4vw;
+  }
+  
+  .t11 {
+    grid-area: g-12;
+    font-size: 4vw;
+  }
+  
+  .t12 {
+    grid-area: g-13;
+    font-size: 4vw;
+  }
+  
+  .t13 {
+    grid-area: g-14;
+    font-size: 4vw;
+  }
+  
+  .t14 {
+    grid-area: g-15;
+    font-size: 4vw;
+  }
+  
+  .t15 {
+    grid-area: g-16;
+    font-size: 4vw;
+  }
+  
+  .t16 {
+    grid-area: g-17;
+    font-size: 4vw;
+  }
+  
+  .tech-image {
+    width: 50%;
+    display: flex;
+    align-self: center;
+  }
+  
+  .techstacks-border {
+    border-left: 6px solid #D59BF6;
+    border-radius: 10px;
+    padding: 0.5% 1%;
+    margin: 1% 0% 1% 1%;
+    animation: goingIn 2s;
+  }
+  
+  .downloadResume {
+    border-radius: 10px;
+    background-image: linear-gradient(180deg, #D59BF6, #FF88DE);
+    box-shadow: 1px 1px #D59BF6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    border: 2px solid black;
+    animation: goingIn 2s;
+  }
+  
+  .downloadResume:hover {
+    background-image: linear-gradient(180deg,  #FFFFFE, #FF88DE);
+    border-color: #D59BF6;
+  }
+  
+  .download-text {
+    font-size: 4vw;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    color: #000000;
+    margin: 1.5% 1% 1.5% 0%;
+    display: inline-block;
+  }
+  
+  .download-icon {
+    display: inline-block;
+    margin: 2.5% 2% 2.5% 1%;
+  }
+  
+  .linkedin,
+  .facebook,
+  .instagram {
+    animation: goingIn 2s;
+    margin-left: 23%;
+  }
+}
