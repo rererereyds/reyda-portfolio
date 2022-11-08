@@ -293,7 +293,7 @@
   
   .about-grid-container {
     display: grid;
-    grid-template: 27vw 63vw 85vw 2vw 48vw 12vw 8vw 12vw 20vw 1vw / 7vw 13vw 20vw 20vw 20vw 13vw 7vw;
+    grid-template: 27vw 63vw 85vw 5vw 48vw 12vw 8vw 12vw 20vw 1vw / 7vw 13vw 20vw 20vw 20vw 13vw 7vw;
     grid-template-areas:
       '. . . . . . .'
       '. g7 g7 g7 g7 g7 .'
