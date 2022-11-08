@@ -43,12 +43,6 @@
   justify-content: flex-start;
 }
 
-.hamburger-container {
-  grid-area: grid-6;
-  display: flex;
-  justify-content: flex-end;
-}
-
 .techstacks-logo {
   grid-area: g5;
   display: flex;
@@ -179,20 +173,20 @@
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 425px) {
+@media only screen and (min-width: 320px) and (max-width: 426px) {
   .homepage {
     overflow: hidden;
   }
   
   .homepage-grid-container {
     display: grid;
-    grid-template: 15vw 9vw 3vw 3vw 3vw 15vw 5vw 5vw / 0.4fr 4fr 1fr 0.4fr;
+    grid-template: 15vw 14vw 10vw 21vw 33vw 24vw 15vw 5vw / 0.4fr 4fr 1fr 0.4fr;
     grid-template-areas:
       '. . . .'
       '. . . .'
-      '. g1 . .'
-      '. g2 . .'
-      '. g3 . .'
+      '. g1 g1 .'
+      '. g2 g2 .'
+      '. g3 g3 .'
       '. g4 g4 .'
       '. g5 g5 .'
       '. . . .';
@@ -202,33 +196,34 @@
     grid-area: g1;
     display: flex;
     justify-content: flex-start;
+    text-align: left;
     animation: transitionIn 1s;
+    border: 1px solid black;
   }
   
   .text2-container {
     grid-area: g2;
     display: flex;
     justify-content: flex-start;
+    text-align: left;
     animation: transitionIn 2s;
+    border: 1px solid black;
   }
   
   .text3-container {
     grid-area: g3;
     display: flex;
     justify-content: flex-start;
+    text-align: left;
     animation: transitionIn 3s;
+    border: 1px solid black;
   }
   
   .splash-container {
     grid-area: g4;
     display: flex;
     justify-content: flex-start;
-  }
-  
-  .hamburger-container {
-    grid-area: grid-6;
-    display: flex;
-    justify-content: flex-end;
+    border: 1px solid black;
   }
   
   .techstacks-logo {
@@ -252,16 +247,16 @@
   .text1,
   .text2,
   .text3 {
-    font-size: 2.5vw;
+    font-size: 7vw;
     font-family: Georgia, serif;
     color: #000000;
     text-shadow: 0.5px 0.5px #D59BF6;
   }
   
   .frontend-text {
-    font-size: 13vw;
+    font-size: 18vw;
     font-family: Georgia, serif;
-    margin-left: -65.8%;
+    margin-left: -100%;
     overflow: hidden;
     position: absolute;
     animation-name: splash;
@@ -269,9 +264,9 @@
   }
   
   .backend-text {
-    font-size:13vw;
+    font-size: 18vw;
     font-family: Georgia, serif;
-    margin-left: -65.8%;
+    margin-left: -100%;
     overflow: hidden;
     position: absolute;
     animation-name: splash;
@@ -280,9 +275,9 @@
   }
   
   .fullstack-text {
-    font-size:13vw;
+    font-size: 18vw;
     font-family: Georgia, serif;
-    margin-left: -65.8%;
+    margin-left: -100%;
     overflow: hidden;
     position: absolute;
     animation-name: splash;
@@ -297,17 +292,15 @@
   }
   
   @keyframes splash {
-    20% {margin-left: -65.8%; opacity: 0%;}
+    20% {margin-left: -100%; opacity: 0%;}
     50% {margin-left: 0%; opacity: 100%;}
-    100% {margin-left: -65.8%; opacity: 0%;}
+    100% {margin-left: -100%; opacity: 0%;}
   }
   
   .frontend-logos {
     display: flex;
     align-self: flex-start;
-    padding: 0.5% 0%;
-    width: 80%;
-    margin-left: -80%;
+    margin-left: -90%;
     overflow: hidden;
     position: absolute;
     animation-name: logo-splash;
@@ -317,9 +310,7 @@
   .backend-logos {
     display: flex;
     align-self: flex-start;
-    padding: 0.5% 0%;
-    width: 80%;
-    margin-left: -80%;
+    margin-left: -100%;
     overflow: hidden;
     position: absolute;
     animation-name: logo-splash;
@@ -330,9 +321,7 @@
   .fullstack-logos {
     display: flex;
     align-self: flex-start;
-    padding: 0.5% 0%;
-    width: 80%;
-    margin-left: -80%;
+    margin-left: -90%;
     overflow: hidden;
     position: absolute;
     animation-name: logo-splash;
@@ -347,14 +336,14 @@
   }
   
   @keyframes logo-splash {
-    20% {margin-left: -80%; opacity: 0%;}
+    20% {margin-left: -100%; opacity: 0%;}
     50% {margin-left: 0%; opacity: 100%;}
-    100% {margin-left: -80%; opacity: 0%;}
+    100% {margin-left: -100%; opacity: 0%;}
   }
   
   .techstacks-image {
     display: inline-block;
-    width: 6%;
+    width: 10%;
     margin: 0% 0.5% 0% 0%;
   }
 }
