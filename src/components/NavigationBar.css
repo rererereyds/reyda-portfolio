@@ -45,6 +45,7 @@
     position: fixed;
     width: 100vw;
     background-color: #FFFFFE;
+    z-index: 200;
   }
   
   .navigation-bar-grid {

@@ -293,17 +293,17 @@
   
   .about-grid-container {
     display: grid;
-    grid-template: 27vw 63vw 85vw 48vw 12vw 8vw 12vw 5vw 10vw / 7vw 13vw 20vw 20vw 20vw 13vw 7vw;
+    grid-template: 27vw 63vw 85vw 48vw 12vw 8vw 12vw 20vw 1vw / 7vw 13vw 20vw 20vw 20vw 13vw 7vw;
     grid-template-areas:
       '. . . . . . .'
-      '. . . g7 g7 g7 g7'
+      '. g7 g7 g7 g7 g7 .'
       '. g1 g1 g1 g1 g1 .'
       '. g2 g2 g2 g2 g2 .'
       '. g6 g6 g6 g6 g6 .'
       '. . . . . . .'
       '. . g3 g4 g5 . .'
       '. . . . . . .'
-      'g8 g8 g8 . . . .';
+      'g8 g8 g8 g8 g8 g8 g8';
   }
   
   .about-container {
@@ -346,7 +346,7 @@
   .reyda-image-container {
     grid-area: g7;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
   }
   
@@ -360,12 +360,12 @@
   .design-image-container {
     grid-area: g8;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;  
   }
   
   .design-image {
-    width: 70%;
+    width: 100%;
     position: absolute;
     z-index: -200;
     animation: goingIn 2s;
@@ -400,6 +400,7 @@
     border-left: 6px solid #D59BF6;
     border-radius: 10px;
     padding: 0.5% 1%;
+    margin-top: 3%;
     animation: goingIn 2s;
   }
   
@@ -581,6 +582,6 @@
   .facebook,
   .instagram {
     animation: goingIn 2s;
-    margin-left: 23%;
+    margin-left: 18%;
   }
 }

@@ -11,13 +11,13 @@ const Projects = () => {
         </div>
         <div className='projects-container'>  
           <div className='proj1-container'>
-            <div className='image'>
+            <a className='image' href='https://63687a5a39a24063a3ea83b8--dapper-cactus-997f3f.netlify.app/' target="_blank">
               <img
                 className="proj-image"
                 src={require("../images/proj1.png")}
                 alt="logo"
               />
-            </div>
+            </a>
             <div className='name'>
               <p className='proj-texts bold'>Project Name : Card Captor</p>
             </div>
@@ -67,13 +67,13 @@ const Projects = () => {
           </div>
 
           <div className='proj2-container'>
-            <div className='image'>
+            <a className='image' href='https://63687b4d52cfab642a9f307a--playful-dragon-d7df7b.netlify.app/' target="_blank">
               <img
                 className="proj-image"
                 src={require("../images/proj2.png")}
                 alt="logo"
               />
-            </div>
+            </a>
             <div className='name'>
               <p className='proj-texts bold'>Project Name : To Do Tracker</p>
             </div>
@@ -118,13 +118,13 @@ const Projects = () => {
           </div>
 
           <div className='proj3-container'>
-            <div className='image'>
+            <a className='image' href='https://reyda-resto-app-project.herokuapp.com/' target="_blank">
               <img
                 className="proj-image"
                 src={require("../images/proj3.png")}
                 alt="logo"
               />
-            </div>
+            </a>
             <div className='name'>
               <p className='proj-texts bold'>Project Name : Mexican Resto</p>
             </div>
@@ -179,13 +179,13 @@ const Projects = () => {
           </div>
 
           <div className='proj4-container'>
-            <div className='image'>
+            <a className='image' href='https://reyda-medrec-project-fullstack.herokuapp.com/' target="_blank">
               <img
                 className="proj-image"
                 src={require("../images/proj4.png")}
                 alt="logo"
               />
-            </div>
+            </a>
             <div className='name'>
               <p className='proj-texts bold'>Project Name : MedRec</p>
             </div>
