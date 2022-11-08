@@ -1,64 +1,79 @@
-.about-page-css {
+.about-page {
   overflow: hidden;
 }
 
-.about-grid-container-css {
+.about-grid-container {
   display: grid;
   grid-template: 3vw 8vw 7vw 3vw 3vw 3vw 3vw 3vw 3vw 3vw 3vw 1vw / 0.4fr 4fr 1fr 0.4fr;
   grid-template-areas:
-    '. . . grid-10'
-    '. grid-1 grid-6 .'
-    '. grid-2 . .'
-    '. grid-2 . .'
-    '. grid-2 . .'
-    '. grid-2 grid-9 grid-9'
-    '. grid-2 . .'
-    '. grid-3 . grid-5'
-    '. grid-3 . grid-7'
-    '. grid-3 . grid-8'
-    '. grid-3 . .'
-    '. . . .';
+    '. . . g7'
+    '. . . .'
+    '. g1 . .'
+    '. g1 . .'
+    '. g1 . .'
+    '. g1 g6 g6'
+    '. g1 . .'
+    '. g2 . g3'
+    '. g2 . g4'
+    '. g2 . g5'
+    '. g2 . .'
+    'g8 . . .';
 }
 
-/* CSS for logo-container-css is t the homepage.css */
-/* .logo-container-css {
-  grid-area: grid-1;
-} */
-
-/* CSS for hamburger-container-css is t the homepage.css */
-/* .hamburger-container-css {
-  grid-area: grid-6;
-} */
-
-.about-container-css {
-  grid-area: grid-2;
+.about-container {
+  grid-area: g1;
   padding: 0% 1%;
 }
 
-.techstacks-container-css {
-  grid-area: grid-3;
+.techstacks-container {
+  grid-area: g2;
 }
 
-.linkedin-container-css {
-  grid-area: grid-5;
+.linkedin-container {
+  grid-area: g3;
   display: flex;
   justify-content: center;
 }
 
-.facebook-container-css {
-  grid-area: grid-7;
+.facebook-container {
+  grid-area: g4;
   display: flex;
   justify-content: center;
 }
 
-.instagram-container-css {
-  grid-area: grid-8;
+.instagram-container {
+  grid-area: g5;
   display: flex;
   justify-content: center;
 }
 
-.resume-container-css {
-  grid-area: grid-9;
+.resume-container {
+  grid-area: g6;
+}
+
+.reyda-image-container {
+  grid-area: g7;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.reyda-image {
+  width: 25%;
+  position: absolute;
+  z-index: -200;
+  animation: comingIn 2s;
+}
+
+.design-image-container {
+  grid-area: g8;
+  display: flex;
+}
+
+.design-image {
+  position: absolute;
+  z-index: -200;
+  animation: goingIn 2s;
 }
 
 @keyframes comingIn {
@@ -78,7 +93,7 @@
   margin-bottom: 1%;
 }
 
-.about-css {
+.about {
   font-size: 3.4vw;
   font-family: Georgia, serif;
   color: #000000;
@@ -105,14 +120,14 @@
   }
 }
 
-.information-css {
+.information {
   font-size: 1.4vw;
   font-family: Georgia, serif;
   color: #000000;
   text-align: left;
 }
 
-.techstacks-grid-css {
+.techstacks-grid {
   display: grid;
   grid-template: 0.5fr 1fr 0.5fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
@@ -122,7 +137,7 @@
   
 }
 
-.techstacks-text-css {
+.techstacks-text {
   grid-area: g1;
   font-size: 1.4vw;
   font-family: Georgia, serif;
@@ -130,101 +145,101 @@
   text-align: left;
 }
 
-.t1-css {
+.t1 {
   grid-area: g2;
   display: flex;
   justify-content: center;
 }
 
-.t2-css {
+.t2 {
   grid-area: g3;
   display: flex;
   justify-content: center;
 }
 
-.t3-css {
+.t3 {
   grid-area: g4;
   display: flex;
   justify-content: center;
 }
 
-.t4-css {
+.t4 {
   grid-area: g5;
   display: flex;
   justify-content: center;
 }
 
-.t5-css {
+.t5 {
   grid-area: g6;
   display: flex;
   justify-content: center;
 }
 
-.t6-css {
+.t6 {
   grid-area: g7;
   display: flex;
   justify-content: center;
 }
 
-.t7-css {
+.t7 {
   grid-area: g8;
   display: flex;
   justify-content: center;
 }
 
-.t8-css {
+.t8 {
   grid-area: g9;
   display: flex;
   justify-content: center;
 }
 
-.t9-css {
+.t9 {
   grid-area: g10;
   margin-top: 2%;
 }
 
-.t10-css {
+.t10 {
   grid-area: g11;
   margin-top: 2%;
 }
 
-.t11-css {
+.t11 {
   grid-area: g12;
   margin-top: 2%;
 }
 
-.t12-css {
+.t12 {
   grid-area: g13;
   margin-top: 2%;
 }
 
-.t13-css {
+.t13 {
   grid-area: g14;
   margin-top: 2%;
 }
 
-.t14-css {
+.t14 {
   grid-area: g15;
   margin-top: 2%;
 }
 
-.t15-css {
+.t15 {
   grid-area: g16;
   margin-top: 2%;
 }
 
-.t16-css {
+.t16 {
   grid-area: g17;
   margin-top: 2%;
 }
 
-.tech-image-css {
+.tech-image {
   width: 60%;
   display: flex;
   align-self: center;
 }
 
-.techstacks-border-css {
+.techstacks-border {
   border-left: 6px solid #D59BF6;
   border-radius: 10px;
   padding: 0.5% 1%;
@@ -251,7 +266,7 @@
   border-color: #D59BF6;
 }
 
-.download-text-css {
+.download-text {
   font-size: 1.3vw;
   font-family: New Century Schoolbook, TeX Gyre Schola, serif;
   color: #000000;
@@ -259,50 +274,14 @@
   display: inline-block;
 }
 
-.download-icon-css {
+.download-icon {
   display: inline-block;
   margin: 2.5% 2% 2.5% 1%;
 }
 
-.linkedin-css,
-.facebook-css,
-.instagram-css {
+.linkedin,
+.facebook,
+.instagram {
   margin-left: 41%;
-  animation: goingIn 2s;
-}
-
-.reyda-image-container-css {
-  grid-area: grid-10;
-  /* position: absolute; */
-  /* z-index: -200; */
-  /* overflow: hidden; */
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  /* border: 1px solid black; */
-  /* margin-left: 64%; */
-}
-
-.reyda-image-css {
-  /* margin-left: 20%;
-  margin-top: -10%; */
-  width: 25%;
-  position: absolute;
-  z-index: -200;
-  /* width: 0%; */
-  animation: comingIn 2s;
-}
-
-.design-image-container-css {
-  position: absolute;
-  z-index: -200;
-  overflow: hidden;
-  margin-left: -10%;
-  margin-top: 43%;
-  height: 8%;
-}
-
-.design-image-css {
-  width: 70%;
   animation: goingIn 2s;
 }

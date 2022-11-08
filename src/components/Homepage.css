@@ -1,63 +1,56 @@
-.homepage-css {
-  /* height: 100vh; */
+.homepage {
   overflow: hidden;
 }
 
-.homepage-grid-container-css {
+.homepage-grid-container {
   display: grid;
   grid-template: 3vw 8vw 3vw 3vw 3vw 15vw 5vw 5vw / 0.4fr 4fr 1fr 0.4fr;
   grid-template-areas:
     '. . . .'
-    '. grid-1 grid-6 .'
-    '. grid-2 grid-6 .'
-    '. grid-3 grid-6 .'
-    '. grid-4 grid-6 .'
-    '. grid-5 grid-5 .'
-    '. grid-7 grid-7 .'
+    '. . . .'
+    '. g1 . .'
+    '. g2 . .'
+    '. g3 . .'
+    '. g4 g4 .'
+    '. g5 g5 .'
     '. . . .';
 }
 
-.logo-container-css {
-  grid-area: grid-1;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.text1-container-css {
-  grid-area: grid-2;
+.text1-container {
+  grid-area: g1;
   display: flex;
   justify-content: flex-start;
   animation: transitionIn 1s;
 }
 
-.text2-container-css {
-  grid-area: grid-3;
+.text2-container {
+  grid-area: g2;
   display: flex;
   justify-content: flex-start;
   animation: transitionIn 2s;
 }
 
-.text3-container-css {
-  grid-area: grid-4;
+.text3-container {
+  grid-area: g3;
   display: flex;
   justify-content: flex-start;
   animation: transitionIn 3s;
 }
 
-.splash-container-css {
-  grid-area: grid-5;
+.splash-container {
+  grid-area: g4;
   display: flex;
   justify-content: flex-start;
 }
 
-.hamburger-container-css {
+.hamburger-container {
   grid-area: grid-6;
   display: flex;
   justify-content: flex-end;
 }
 
-.techstacks-logo-css {
-  grid-area: grid-7;
+.techstacks-logo {
+  grid-area: g5;
   display: flex;
   justify-content: flex-start;
 }
@@ -74,16 +67,16 @@
   }
 }
 
-.text1-css,
-.text2-css,
-.text3-css {
+.text1,
+.text2,
+.text3 {
   font-size: 2.5vw;
   font-family: Georgia, serif;
   color: #000000;
   text-shadow: 0.5px 0.5px #D59BF6;
 }
 
-.frontend-text-css {
+.frontend-text {
   font-size: 13vw;
   font-family: Georgia, serif;
   margin-left: -65.8%;
@@ -93,7 +86,7 @@
   animation-duration: 9s;
 }
 
-.backend-text-css {
+.backend-text {
   font-size:13vw;
   font-family: Georgia, serif;
   margin-left: -65.8%;
@@ -104,7 +97,7 @@
   animation-duration: 9s;
 }
 
-.fullstack-text-css {
+.fullstack-text {
   font-size:13vw;
   font-family: Georgia, serif;
   margin-left: -65.8%;
@@ -115,9 +108,9 @@
   animation-duration: 9s;
 }
 
-.frontend-text-css,
-.backend-text-css,
-.fullstack-text-css {
+.frontend-text,
+.backend-text,
+.fullstack-text {
   animation-iteration-count: infinite;
 }
 
@@ -127,20 +120,7 @@
   100% {margin-left: -65.8%; opacity: 0%;}
 }
 
-.hamburger-css {
-  border: 2px solid #000000;
-  border-radius: 5px;
-  background-image: linear-gradient(180deg, #D59BF6, #FF88DE);
-  margin-top: 6%;
-}
-
-.hamburger-css:hover {
-  border: 2px solid #D59BF6;
-  border-radius: 5px;
-  background-image: linear-gradient(#D59BF6, #FFFFFE);
-}
-
-.frontend-logos-css {
+.frontend-logos {
   display: flex;
   align-self: flex-start;
   padding: 0.5% 0%;
@@ -152,7 +132,7 @@
   animation-duration: 9s;
 }
 
-.backend-logos-css {
+.backend-logos {
   display: flex;
   align-self: flex-start;
   padding: 0.5% 0%;
@@ -165,7 +145,7 @@
   animation-duration: 9s;
 }
 
-.fullstack-logos-css {
+.fullstack-logos {
   display: flex;
   align-self: flex-start;
   padding: 0.5% 0%;
@@ -178,9 +158,9 @@
   animation-duration: 9s;
 }
 
-.frontend-logos-css,
-.backend-logos-css,
-.fullstack-logos-css {
+.frontend-logos,
+.backend-logos,
+.fullstack-logos {
   animation-iteration-count: infinite;
 }
 
@@ -190,8 +170,191 @@
   100% {margin-left: -80%; opacity: 0%;}
 }
 
-.techstacks-image-css {
+.techstacks-image {
   display: inline-block;
   width: 6%;
   margin: 0% 0.5% 0% 0%;
+}
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  .homepage {
+    overflow: hidden;
+  }
+  
+  .homepage-grid-container {
+    display: grid;
+    grid-template: 15vw 9vw 3vw 3vw 3vw 15vw 5vw 5vw / 0.4fr 4fr 1fr 0.4fr;
+    grid-template-areas:
+      '. . . .'
+      '. . . .'
+      '. g1 . .'
+      '. g2 . .'
+      '. g3 . .'
+      '. g4 g4 .'
+      '. g5 g5 .'
+      '. . . .';
+  }
+  
+  .text1-container {
+    grid-area: g1;
+    display: flex;
+    justify-content: flex-start;
+    animation: transitionIn 1s;
+  }
+  
+  .text2-container {
+    grid-area: g2;
+    display: flex;
+    justify-content: flex-start;
+    animation: transitionIn 2s;
+  }
+  
+  .text3-container {
+    grid-area: g3;
+    display: flex;
+    justify-content: flex-start;
+    animation: transitionIn 3s;
+  }
+  
+  .splash-container {
+    grid-area: g4;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .hamburger-container {
+    grid-area: grid-6;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .techstacks-logo {
+    grid-area: g5;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  @keyframes transitionIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  .text1,
+  .text2,
+  .text3 {
+    font-size: 2.5vw;
+    font-family: Georgia, serif;
+    color: #000000;
+    text-shadow: 0.5px 0.5px #D59BF6;
+  }
+  
+  .frontend-text {
+    font-size: 13vw;
+    font-family: Georgia, serif;
+    margin-left: -65.8%;
+    overflow: hidden;
+    position: absolute;
+    animation-name: splash;
+    animation-duration: 9s;
+  }
+  
+  .backend-text {
+    font-size:13vw;
+    font-family: Georgia, serif;
+    margin-left: -65.8%;
+    overflow: hidden;
+    position: absolute;
+    animation-name: splash;
+    animation-delay: 3s;
+    animation-duration: 9s;
+  }
+  
+  .fullstack-text {
+    font-size:13vw;
+    font-family: Georgia, serif;
+    margin-left: -65.8%;
+    overflow: hidden;
+    position: absolute;
+    animation-name: splash;
+    animation-delay: 6s;
+    animation-duration: 9s;
+  }
+  
+  .frontend-text,
+  .backend-text,
+  .fullstack-text {
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes splash {
+    20% {margin-left: -65.8%; opacity: 0%;}
+    50% {margin-left: 0%; opacity: 100%;}
+    100% {margin-left: -65.8%; opacity: 0%;}
+  }
+  
+  .frontend-logos {
+    display: flex;
+    align-self: flex-start;
+    padding: 0.5% 0%;
+    width: 80%;
+    margin-left: -80%;
+    overflow: hidden;
+    position: absolute;
+    animation-name: logo-splash;
+    animation-duration: 9s;
+  }
+  
+  .backend-logos {
+    display: flex;
+    align-self: flex-start;
+    padding: 0.5% 0%;
+    width: 80%;
+    margin-left: -80%;
+    overflow: hidden;
+    position: absolute;
+    animation-name: logo-splash;
+    animation-delay: 3s;
+    animation-duration: 9s;
+  }
+  
+  .fullstack-logos {
+    display: flex;
+    align-self: flex-start;
+    padding: 0.5% 0%;
+    width: 80%;
+    margin-left: -80%;
+    overflow: hidden;
+    position: absolute;
+    animation-name: logo-splash;
+    animation-delay: 6s;
+    animation-duration: 9s;
+  }
+  
+  .frontend-logos,
+  .backend-logos,
+  .fullstack-logos {
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes logo-splash {
+    20% {margin-left: -80%; opacity: 0%;}
+    50% {margin-left: 0%; opacity: 100%;}
+    100% {margin-left: -80%; opacity: 0%;}
+  }
+  
+  .techstacks-image {
+    display: inline-block;
+    width: 6%;
+    margin: 0% 0.5% 0% 0%;
+  }
 }
