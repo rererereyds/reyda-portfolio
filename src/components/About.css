@@ -286,14 +286,14 @@
   animation: goingIn 2s;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 425px) {
+@media only screen and (min-width: 320px) and (max-width: 426px) {
   .about-page {
     overflow: hidden;
   }
   
   .about-grid-container {
     display: grid;
-    grid-template: 27vw 63vw 85vw 5vw 48vw 12vw 8vw 12vw 20vw 1vw / 7vw 13vw 20vw 20vw 20vw 13vw 7vw;
+    grid-template: 27vw 63vw 85vw 5vw 48vw 12vw 8vw 12vw 20vw 1vw / 7vw 19vw 16vw 16vw 16vw 19vw 7vw;
     grid-template-areas:
       '. . . . . . .'
       '. g7 g7 g7 g7 g7 .'
@@ -319,21 +319,21 @@
   .linkedin-container {
     grid-area: g3;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
   }
   
   .facebook-container {
     grid-area: g4;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
   }
   
   .instagram-container {
     grid-area: g5;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
   }
   
@@ -583,6 +583,303 @@
   .facebook,
   .instagram {
     animation: goingIn 2s;
-    margin-left: 18%;
+    padding-right: 36%;
+  }
+}
+
+
+
+
+
+@media only screen and (min-width: 426px) and (max-width: 769px) {
+  .about-page {
+    overflow: hidden;
+  }
+  
+  .about-grid-container {
+    display: grid;
+    grid-template: 17vw 3vw 8vw 7vw 4vw 2vw 9vw 6vw 6vw 6vw 6vw 4vw 3vw 1vw / 10vw 4fr 1fr 10vw;
+    grid-template-areas:
+      '. . . .'
+      '. . . g7'
+      '. . . .'
+      '. g1 . .'
+      '. g1 . .'
+      '. g1 . .'
+      '. g1 g6 g6'
+      '. g1 . g3'
+      '. . . g4'
+      '. g2 . g5'
+      '. g2 . .'
+      '. g2 . .'
+      '. g2 . .'
+      'g8 . . .';
+  }
+  
+  .about-container {
+    grid-area: g1;
+    padding: 0% 1%;
+  }
+  
+  .techstacks-container {
+    grid-area: g2;
+  }
+  
+  .linkedin-container {
+    grid-area: g3;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .facebook-container {
+    grid-area: g4;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .instagram-container {
+    grid-area: g5;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .resume-container {
+    grid-area: g6;
+  }
+  
+  .reyda-image-container {
+    grid-area: g7;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  
+  .reyda-image {
+    width: 27%;
+    position: absolute;
+    z-index: -200;
+    animation: comingIn 2s;
+  }
+  
+  .design-image-container {
+    grid-area: g8;
+    display: flex;
+  }
+  
+  .design-image {
+    width: 42%;
+    position: absolute;
+    z-index: -200;
+    animation: goingIn 2s;
+  }
+  
+  @keyframes comingIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  .about-text-container {
+    border-bottom: 2px solid black;
+    margin-bottom: 1%;
+  }
+  
+  .about {
+    font-size: 3.4vw;
+    font-family: Georgia, serif;
+    color: #000000;
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  .information-text-container {
+    border-left: 6px solid #D59BF6;
+    border-radius: 10px;
+    padding: 0.5% 1%;
+    animation: goingIn 2s;
+  }
+  
+  @keyframes goingIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .information {
+    font-size: 2vw;
+    font-family: Georgia, serif;
+    color: #000000;
+    text-align: left;
+  }
+  
+  .techstacks-grid {
+    display: grid;
+    grid-template: 0.5fr 1fr 0.5fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'g1 g1 g1 g1 g1 g1 g1 g1'
+      'g2 g3 g4 g5 g6 g7 g8 g9'
+      'g10 g11 g12 g13 g14 g15 g16 g17';
+    
+  }
+  
+  .techstacks-text {
+    grid-area: g1;
+    font-size: 2vw;
+    font-family: Georgia, serif;
+    color: #000000;
+    text-align: left;
+  }
+  
+  .t1 {
+    grid-area: g2;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .t2 {
+    grid-area: g3;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .t3 {
+    grid-area: g4;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .t4 {
+    grid-area: g5;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .t5 {
+    grid-area: g6;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .t6 {
+    grid-area: g7;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .t7 {
+    grid-area: g8;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .t8 {
+    grid-area: g9;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .t9 {
+    grid-area: g10;
+    margin-top: 2%;
+  }
+  
+  .t10 {
+    grid-area: g11;
+    margin-top: 2%;
+  }
+  
+  .t11 {
+    grid-area: g12;
+    margin-top: 2%;
+  }
+  
+  .t12 {
+    grid-area: g13;
+    margin-top: 2%;
+  }
+  
+  .t13 {
+    grid-area: g14;
+    margin-top: 2%;
+  }
+  
+  .t14 {
+    grid-area: g15;
+    margin-top: 2%;
+  }
+  
+  .t15 {
+    grid-area: g16;
+    margin-top: 2%;
+  }
+  
+  .t16 {
+    grid-area: g17;
+    margin-top: 2%;
+  }
+  
+  .tech-image {
+    width: 60%;
+    display: flex;
+    align-self: center;
+  }
+  
+  .techstacks-border {
+    border-left: 6px solid #D59BF6;
+    border-radius: 10px;
+    padding: 0.5% 1%;
+    margin: 1% 0% 1% 1%;
+    animation: goingIn 2s;
+  }
+  
+  .downloadResume {
+    border-radius: 10px;
+    background-image: linear-gradient(180deg, #D59BF6, #FF88DE);
+    box-shadow: 1px 1px #D59BF6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 23%;
+    border: 2px solid black;
+    margin-left: 0.5%;
+    animation: comingIn 2s;
+  }
+  
+  .downloadResume:hover {
+    background-image: linear-gradient(180deg,  #FFFFFE, #FF88DE);
+    border-color: #D59BF6;
+  }
+  
+  .download-text {
+    font-size: 2vw;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    color: #000000;
+    margin: 1.5% 1% 1.5% 0%;
+    display: inline-block;
+  }
+  
+  .download-icon {
+    display: inline-block;
+    margin: 2.5% 2% 2.5% 1%;
+  }
+  
+  .linkedin,
+  .facebook,
+  .instagram {
+    margin-left: 41%;
+    animation: goingIn 2s;
   }
 }

@@ -140,7 +140,7 @@
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 425px) {
+@media only screen and (min-width: 320px) and (max-width: 426px) {
   .navigation {
     height: 100vh;
     width: 100vw;
@@ -257,6 +257,153 @@
   .projects-text,
   .contact-text {
     font-size: 8vw;
+    font-family: Georgia, serif;
+    color: #000000;
+    text-shadow: 0.5px 0.5px #D59BF6;
+    animation-name: appear;
+    animation-duration: 1s;
+  }
+  
+  @keyframes appear {
+    0% {margin-top: -20%;}
+    100% {margin-top: 0%;}
+  }
+  
+  .home-text:hover,
+  .about-text:hover,
+  .projects-text:hover,
+  .contact-text:hover {
+    color: #FF88DE;
+    text-shadow: 0.5px 0.5px #000000;
+  }
+  
+  .hamburger2 {
+    border-radius: 5px;
+    background-image: linear-gradient(180deg, #D59BF6, #FF88DE);
+    margin-top: 5.5%;
+    margin-right: -0.2%;
+  }
+  
+  .hamburger2:hover {
+    border: 2px solid #D59BF6;
+    border-radius: 5px;
+    background-image: linear-gradient(#D59BF6, #FFFFFE);
+  }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 426px) and (max-width: 769px) {
+  .navigation {
+    height: 100vh;
+    width: 100vw;
+    z-index: 200;
+    overflow: hidden;
+    background-image: linear-gradient(180deg, #FFFFFE,#D59BF6);
+    background-color: #D59BF6;
+  }
+    
+  .grid-modal {
+    display: grid;
+    grid-template: 2.03vw 15vw 2vw 7vw 7vw 7vw 7vw 5vw / 6.6vw 1fr 1fr 6.6vw;
+    grid-template-areas:
+    '. . . .'
+    '. g1 g2 .'
+    '. . . .'
+    '. g7 g3 .'
+    '. g7 g4 .'
+    '. g7 g5 .'
+    '. g7 g6 .'
+    '. . . .';
+  }
+  
+  .nav-logo-container {
+    grid-area: g1;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .nav-logo-image {
+    width: 34.5%;
+  }
+  
+  .nav-hamburger-container {
+    grid-area: g2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .text1-modal {
+    grid-area: g3;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  
+  .text2-modal {
+    grid-area: g4;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  
+  .text3-modal {
+    grid-area: g5;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  
+  .text4-modal {
+    grid-area: g6;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  
+  .ramble-image-container {
+    grid-area: g7;
+    display: flex;
+    justify-content: center;
+    animation: fromLeft 2s;
+  }
+  
+  .ramble-image {
+    width: 65%;
+  }
+  
+  @keyframes fromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .nav-hamburger {
+    border-radius: 5px;
+    background-image: linear-gradient(180deg, #D59BF6, #FF88DE);
+  }
+  
+  .nav-hamburger:hover {
+    border: 2px solid #D59BF6;
+    border-radius: 5px;
+    background-image: linear-gradient(#D59BF6, #FFFFFE);
+  }
+  
+  .home-text,
+  .about-text,
+  .projects-text,
+  .contact-text {
+    font-size: 5vw;
     font-family: Georgia, serif;
     color: #000000;
     text-shadow: 0.5px 0.5px #D59BF6;

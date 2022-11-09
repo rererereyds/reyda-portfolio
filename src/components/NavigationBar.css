@@ -39,8 +39,7 @@
 
 
 
-/* @media only screen and (min-width: 320px) and (max-width: 426px) { */
-  @media only screen and (min-width: 320px) and (max-width: 425px) {
+@media only screen and (min-width: 320px) and (max-width: 426px) {
   .navigation-bar {
     position: fixed;
     background-color: #FFFFFE;
@@ -69,6 +68,51 @@
   
   .hamburger {
 
+    border-radius: 5px;
+    background-image: linear-gradient(180deg, #D59BF6, #FF88DE);
+  }
+  
+  .hamburger:hover {
+    border: 2px solid #D59BF6;
+    border-radius: 5px;
+    background-image: linear-gradient(#D59BF6, #FFFFFE);
+  }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 426px) and (max-width: 769px) {
+  .navigation-bar {
+    position: fixed;
+    width: 100vw;
+    background-color: #FFFFFE;
+  }
+  
+  .navigation-bar-grid {
+    display: grid;
+    grid-template: 2vw 15vw / 0.15fr 1fr 1fr 0.15fr;
+    grid-template-areas:
+      '. . . .'
+      '. g1 g2 .';
+  }
+  
+  .logo-container {
+    grid-area: g1;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .hamburger-container {
+    grid-area: g2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .hamburger {
     border-radius: 5px;
     background-image: linear-gradient(180deg, #D59BF6, #FF88DE);
   }
