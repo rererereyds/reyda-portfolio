@@ -465,5 +465,232 @@
 
 
 
-
-@media only screen and (min-width: 426px) and (max-width: 769px) {}
+@media only screen and (min-width: 426px) and (max-width: 769px) {
+  .projects-page {
+    overflow: hidden;
+  }
+  
+  .projects-grid-container {
+    display: grid;
+    grid-template: 3vw 20vw 3vw 120vw 5vw / 0.4fr 4fr 1fr 0.4fr;
+    grid-template-areas:
+      '. . . .'
+      '. . . .'
+      '. g1 g1 .'
+      '. g2 g2 .'
+      '. . . .';
+  }
+  
+  .proj-text-container {
+    grid-area: g1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 1%;
+  }
+  
+  .proj-text {
+    font-size: 3.4vw;
+    font-family: Georgia, serif;
+    color: #000000;
+    padding-bottom: 3%;
+  }
+  
+  .projects-container {
+    grid-area: g2;
+    display: grid;
+    grid-template: 58.5vw 3vw 58.5vw / 41.5vw 3vw 41.5vw;
+    grid-template-areas:
+      'g-1 . g-2'
+      '. . .'
+      'g-3 . g-4';
+  }
+  
+  .proj1-container {
+    grid-area: g-1;
+    border: 5px solid #D59BF6;
+    border-radius: 10px;
+    display: grid;
+    grid-template: 20vw 4.5vw 14vw 10vw 9vw / 1fr 1fr;
+    grid-template-areas:
+      'gr1 gr1'
+      'gr2 gr2'
+      'gr3 gr3'
+      'gr4 gr4'
+      'gr5 gr6';
+    animation: fromLeft 2s;
+  }
+  
+  .proj2-container {
+    grid-area: g-2;
+    border: 5px solid #D59BF6;
+    border-radius: 10px;
+    display: grid;
+    grid-template: 20vw 4.5vw 14vw 10vw 9vw / 1fr 1fr;
+    grid-template-areas:
+      'gr1 gr1'
+      'gr2 gr2'
+      'gr3 gr3'
+      'gr4 gr4'
+      'gr5 gr6';
+    animation: fromLeft 2s;
+  }
+  
+  .proj3-container {
+    grid-area: g-3;
+    border: 5px solid #D59BF6;
+    border-radius: 10px;
+    display: grid;
+    grid-template: 20vw 4.5vw 14vw 10vw 9vw / 1fr 1fr;
+    grid-template-areas:
+      'gr1 gr1'
+      'gr2 gr2'
+      'gr3 gr3'
+      'gr4 gr4'
+      'gr5 gr6';
+    animation: fromRight 2s;
+  }
+  
+  .proj4-container {
+    grid-area: g-4;
+    border: 5px solid #D59BF6;
+    border-radius: 10px;
+    display: grid;
+    grid-template: 20vw 4.5vw 14vw 10vw 9vw / 1fr 1fr;
+    grid-template-areas:
+      'gr1 gr1'
+      'gr2 gr2'
+      'gr3 gr3'
+      'gr4 gr4'
+      'gr5 gr6';
+    animation: fromRight 2s;
+  }
+  
+  .image {
+    grid-area: gr1;
+  }
+  
+  .name {
+    grid-area: gr2;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .desc {
+    grid-area: gr3;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tech {
+    grid-area: gr4;
+  }
+  
+  .code {
+    grid-area: gr5;
+    border-top: 2px solid #D59BF6;
+    border-right: 1px solid #D59BF6;
+  }
+  
+  .demo {
+    grid-area: gr6;
+    border-top: 2px solid #D59BF6;
+    border-left: 1px solid #D59BF6;
+  }
+  
+  .proj-image {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1% 1% 0% 1%;
+    animation: comingIn 2s;
+    border-radius: 7px 7px 0 0;
+  }
+  
+  .proj-texts {
+    font-size: 2vw;
+    margin-top: 1.5%;
+    padding: 0% 1%;
+    font-family: Georgia, serif;
+    color: #000000;
+    animation: comingUp 2s;
+  }
+  
+  .bold {
+    font-weight: 700;
+  }
+  
+  .tech-display {
+    width: 10%;
+    display: inline-block;
+    margin-top: -8%;
+    animation: comingUp 2s;
+  }
+  
+  .tech1-display {
+    width: 20%;
+    display: inline-block;
+    margin-top: -8%;
+    padding: 0% 1%;
+    animation: comingUp 2s;
+  }
+  
+  .github-icon {
+    margin-top: -22%;
+    animation: comingUp 2s;
+  }
+  
+  .deploy-icon {
+    margin-top: -22%;
+    animation: comingUp 2s;
+  }
+  
+  @keyframes comingUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes fromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  @keyframes fromRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .bi-github,
+  .bi-window-fullscreen {
+    fill: #0000ff;
+    animation: highlightIcons 3s infinite;
+  }
+  
+  @keyframes highlightIcons {
+    0% {fill: #0000ff}  
+    25% {fill: #19A0FF}
+    75% {fill: #000099}
+    100% {fill: #0000E5}
+  }
+}
